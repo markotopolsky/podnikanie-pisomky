@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Study Tool - Topic E</title>
     <style>
         body {
             font-family: 'Georgia', 'Garamond', serif;
             margin: 0;
-            padding: 40px;
+            padding: 15px 10px;
             background: #2c2416;
             min-height: 100vh;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 100%;
             margin: 0 auto;
             background: #f9f6f0;
             background-image: 
@@ -25,7 +25,7 @@
                     rgba(139, 111, 71, 0.03) 31px,
                     rgba(139, 111, 71, 0.03) 32px
                 );
-            padding: 60px;
+            padding: 25px 20px;
             box-shadow: 
                 0 0 3px rgba(0,0,0,0.3),
                 inset 0 0 50px rgba(212, 197, 169, 0.2);
@@ -35,27 +35,28 @@
         h1 {
             color: #3d2817;
             border-bottom: 2px solid #8b6f47;
-            padding-bottom: 15px;
-            font-size: 1.8em;
+            padding-bottom: 12px;
+            font-size: 1.3em;
             font-weight: normal;
             margin-top: 0;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
+            line-height: 1.4;
         }
         
         h3 {
             color: #5d4a2f;
-            margin-top: 30px;
-            margin-bottom: 15px;
+            margin-top: 25px;
+            margin-bottom: 12px;
             font-weight: 600;
-            font-size: 1.3em;
+            font-size: 1.15em;
         }
         
         .content {
-            line-height: 2;
+            line-height: 1.7;
             color: #1a1410;
-            margin: 30px 0;
-            font-size: 1.05em;
-            text-align: justify;
+            margin: 20px 0;
+            font-size: 1em;
+            text-align: left;
         }
         
         .content strong {
@@ -64,24 +65,28 @@
         }
         
         ul {
-            margin: 10px 0 20px 0;
-            padding-left: 40px;
-            line-height: 1.9;
+            margin: 10px 0 15px 0;
+            padding-left: 30px;
+            line-height: 1.6;
         }
         
         .back-button {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 14px 25px;
             background: #f4ecd8;
             color: #3d2817;
             text-decoration: none;
             border: 2px solid #8b6f47;
             font-weight: normal;
-            transition: all 0.3s;
+            transition: all 0.2s;
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-top: 10px;
+            font-size: 1em;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
         }
         
-        .back-button:hover {
+        .back-button:hover, .back-button:active {
             background: #fff9e6;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }

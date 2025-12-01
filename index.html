@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Study Tool - Main Menu</title>
     <style>
         body {
@@ -13,6 +13,7 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
+            padding: 15px 10px;
             background: #2c2416;
             background-image: 
                 radial-gradient(circle at 20% 50%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
@@ -21,20 +22,21 @@
         
         h1 {
             color: #d4c5a9;
-            margin-bottom: 30px;
-            font-size: 2em;
+            margin-bottom: 20px;
+            font-size: 1.6em;
             font-weight: normal;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             border-bottom: 2px solid #8b6f47;
-            padding-bottom: 15px;
+            padding-bottom: 10px;
+            text-align: center;
         }
         
         .button-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            padding: 30px;
+            gap: 15px;
+            padding: 15px;
             max-width: 900px;
             width: 100%;
             background: rgba(212, 197, 169, 0.05);
@@ -44,15 +46,15 @@
         
         .study-button {
             width: 100%;
-            height: 120px;
+            height: 100px;
             border: 3px solid #8b6f47;
             border-radius: 8px;
-            font-size: 3.5em;
+            font-size: 3em;
             font-weight: normal;
             color: #2c2416;
             background: #f4ecd8;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -62,6 +64,8 @@
                 0 3px 8px rgba(0,0,0,0.4);
             font-family: 'Georgia', serif;
             position: relative;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
         }
         
         .study-button::before {

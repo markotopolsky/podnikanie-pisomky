@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tool - Main Menu</title>
+    <style>
+        body {
+            font-family: 'Georgia', 'Garamond', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #2c2416;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(139, 69, 19, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(101, 67, 33, 0.1) 0%, transparent 50%);
+        }
+        
+        h1 {
+            color: #d4c5a9;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #8b6f47;
+            padding-bottom: 15px;
+        }
+        
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            padding: 30px;
+            background: rgba(212, 197, 169, 0.05);
+            border-radius: 10px;
+            border: 1px solid #8b6f47;
+        }
+        
+        .study-button {
+            width: 90px;
+            height: 90px;
+            border: 2px solid #8b6f47;
+            border-radius: 3px;
+            font-size: 2em;
+            font-weight: normal;
+            color: #2c2416;
+            background: #f4ecd8;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 
+                inset 0 0 20px rgba(212, 197, 169, 0.3),
+                0 2px 5px rgba(0,0,0,0.3);
+            font-family: 'Georgia', serif;
+            position: relative;
+        }
+        
+        .study-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255,255,255,0.2) 0%,
+                transparent 50%,
+                rgba(0,0,0,0.1) 100%
+            );
+            pointer-events: none;
+        }
+        
+        .study-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                inset 0 0 30px rgba(139, 111, 71, 0.4),
+                0 4px 10px rgba(0,0,0,0.4);
+            background: #fff9e6;
+            border-color: #6b5536;
+        }
+        
+        .btn-a, .btn-b, .btn-c, .btn-d, .btn-e,
+        .btn-f, .btn-g, .btn-h, .btn-i, .btn-j {
+            background: #f4ecd8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Study Tool</h1>
+    <div class="button-container">
+        <a href="a.html" class="study-button btn-a">A</a>
+        <a href="b.html" class="study-button btn-b">B</a>
+        <a href="c.html" class="study-button btn-c">C</a>
+        <a href="d.html" class="study-button btn-d">D</a>
+        <a href="e.html" class="study-button btn-e">E</a>
+        <a href="f.html" class="study-button btn-f">F</a>
+        <a href="g.html" class="study-button btn-g">G</a>
+        <a href="h.html" class="study-button btn-h">H</a>
+        <a href="i.html" class="study-button btn-i">I</a>
+        <a href="j.html" class="study-button btn-j">J</a>
+    </div>
+</body>
+</html>
+
